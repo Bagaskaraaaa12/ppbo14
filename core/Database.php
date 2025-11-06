@@ -1,12 +1,20 @@
 <?php
 class Database
 {
-    private $host = "localhost";
-    private $port = "3306";
-    private $db_name = "rest_api";
-    private $username = "root";
-    private $password = "";
+    private $host;
+    private $port;
+    private $db_name;
+    private $username;
+    private $password;
     public $conn;
+
+    public function __construct() {
+        $this->host = getenv('DB_HOST') ?: 'localhost';
+        $this->port = getenv('DB_PORT') ?: '3306';
+        $this->db_name = getenv('DB_NAME') ?: 'kampus_db';
+        $this->username = getenv('DB_USER') ?: 'root';
+        $this->password = getenv('DB_PASS') ?: '';
+    }
 
     public function connect()
     {

@@ -1,0 +1,11 @@
+{
+  "name": "pbo13/rest-api-php",
+  "description": "REST API PHP Native untuk belajar CRUD",
+  "require": {
+    "php": ">=8.1",
+    "ext-pdo": "*"
+  },
+  "scripts": {
+    "start": "php -S 0.0.0.0:10000"
+  }
+}
