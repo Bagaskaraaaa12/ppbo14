@@ -1,4 +1,4 @@
-# Rest API Rhagil
+# Rest API
 Kelas PBO 2025, pertemuan ke-13 (7 Nov)
 
 ## 1. Clone repo
@@ -7,11 +7,11 @@ git clone https://github.com/leo42night/rest-api
 ```
 **Buat Repository di GitHub:** Tempat simpan proyek agar vercel dapat koneksi.
 ```bash
-git add remote repoku https://github.com/<username>/<repo> 
-# buat sebuah perubahan di proyek agar terdetect commit baru
+git remote add repoku https://github.com/<username>/<repo> 
+# buat sebuah perubahan di proyek agar bisa submit commit baru
 git add .
 git commit -m "persiapan sebelum deploy"
-gut push repoku main --force
+git push repoku main --force
 ```
 
 ## 2. Config
