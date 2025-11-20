@@ -3,6 +3,7 @@ require_once __DIR__ . '/../core/Database.php';
 
 class MahasiswaModel
 {
+    
     private $conn;
     private $table = "mahasiswa";
 
