@@ -177,12 +177,13 @@ Di halaman proyek vercel kalian, buka stores (contoh: **vercel.com/_nama-teams_/
 
 - **(dalam proyek vercel) Buka Settings > Environment Variables** (url nya seperti ini **vercel.com/_nama-teams_/_nama-proyek_/settings/environment-variables**): Set variabel database berikut, sesuaikan dengan isi variabel `...URL_NON_POOLING` sebelumnya.  
 ```bash
-DB_TYPE: pgsql
-DB_HOST: aws-1-ap-southeast-1.pooler.supabase.com
-DB_PORT: 5432 # pakai port NON_POOLING
-DB_USER: postgres.itzxopxshpvcjotxxxxx
-DB_PASS: ETnWsKT1Q9xxxxx
-DB_SSLMODE: require
+DB_TYPE=pgsql
+DB_HOST=aws-1-ap-southeast-1.pooler.supabase.com
+DB_PORT=5432 # pakai port NON_POOLING
+DB_NAME=postgres
+DB_USER=postgres.itzxopxshpvcjotxxxxx
+DB_PASS=ETnWsKT1Q9xxxxx
+DB_SSLMODE=require
 ```
 
 - Jika sudah selesai setup variabel DB di vercel, sekarang coba deploy ulang (tombolnya akan muncul setelah ada perubahan variabel).
